@@ -11,7 +11,9 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hello! May i help you?"
+  - text: "Hi! How can i help you?"
+  - text: "Hey! What do you need?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -24,10 +26,14 @@ responses:
   - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Good bye"
+  - text: "See you later!"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a bot created by BuyBox Developer. Im here to help BuyBox Customer."
+
+  utter_dont_understand:
+  - text: "Im sorry, i don't understand what do you mean? Can you repeat?"
 
 session_config:
   session_expiration_time: 60

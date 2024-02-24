@@ -89,3 +89,32 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: find_best_product
+  examples: |
+    - Im looking for best product?
+    - What is the best product here?
+    - Can you give me the best product?
+
+- intent: buy_product
+  examples: |
+    - i want to buy product
+    - buy product
+    - find product
+    - i need this product
+    - 
+
+- intent: no_context
+  examples: |
+    - asdaasasd
+    - qwerkhlfrsklfhlk
+    - ahgfjdsvxcbishwieu
+    - rweiutgigashlzhv
+    - !@#I$%UJ$#(%$#*(5))
+    - !(*&#@*&(*#
+    - #^@&!^#
+    - 154864856145
+    - hkjgxfdhlhxkl
+    - zgdfgers
+    - eyrwwayreowaeas
+    - sfdgHFDSLDS

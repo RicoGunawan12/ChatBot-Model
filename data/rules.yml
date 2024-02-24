@@ -11,3 +11,13 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Greet back anytime the user greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: No context from user
+  steps:
+  - intent: no_context
+  - action: utter_dont_understand
