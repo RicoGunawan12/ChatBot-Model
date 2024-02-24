@@ -2,6 +2,14 @@ version: "3.1"
 
 stories:
 
+- story: buy product
+  steps:
+  - intent: buy_product
+  - action: utter_ask_detail
+  - intent: give_description
+  - action: action_tell_product
+  - action: utter_did_that_help
+
 - story: happy path
   steps:
   - intent: greet

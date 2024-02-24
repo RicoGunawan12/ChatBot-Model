@@ -21,3 +21,19 @@ rules:
   steps:
   - intent: no_context
   - action: utter_dont_understand
+
+- rule: Find Best Product
+  steps:
+  - intent: find_best_product
+  - action: action_tell_best_product
+  - action: utter_did_that_help
+
+- rule: product sell
+  steps:
+  - intent: product_sell
+  - action: utter_product_sell
+
+- rule: Describe Website
+  steps:
+  - intent: introduction_website
+  - action: utter_describe_website

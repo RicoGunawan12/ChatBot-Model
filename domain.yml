@@ -8,6 +8,12 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - no_context
+  - find_best_product
+  - buy_product
+  - give_description
+  - product_sell
+  - introduction_website
 
 responses:
   utter_greet:
@@ -35,6 +41,19 @@ responses:
   utter_dont_understand:
   - text: "Im sorry, i don't understand what do you mean? Can you repeat?"
 
+  utter_ask_detail:
+  - text: "Can you describe the description of your product?"
+
+  utter_describe_website:
+  - text: "This is a web 3.0 website that helps customer to find customer's favorite product. We offer unparalleled security, transparency, and decentralization experience using blockchain as the payment method"
+
+  utter_product_sell:
+  - text: "This website sell best product from around the world. You can ask me to recommend you the best product here"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+actions:
+- action_tell_best_product
+- action_tell_product

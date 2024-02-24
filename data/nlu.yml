@@ -1,5 +1,7 @@
 version: "3.1"
 
+
+
 nlu:
 - intent: greet
   examples: |
@@ -89,20 +91,53 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - who are you?
 
 - intent: find_best_product
   examples: |
-    - Im looking for best product?
-    - What is the best product here?
-    - Can you give me the best product?
+    - im looking for best product
+    - what is the best product here?
+    - can you give me the best product?
+    - i need to buy the best product here
+    - i am finding best product
+    - can you recommend the best product here?
 
 - intent: buy_product
   examples: |
     - i want to buy product
     - buy product
     - find product
-    - i need this product
-    - 
+    - i need to buy product
+    - can you find me a product?
+    - im looking for product
+    - i am finding product
+
+- intent: give_description
+  examples: |
+    - red shoe
+    - black shoe
+    - white shoe
+    - purple shoe
+    - big shoe
+    - yellow shoe
+    - brown shoe
+    - blue shoe
+    - nike shoe
+    - adidas shoe
+    - converse shoe
+    - i need 
+
+- intent: product_sell
+  examples: |
+    - what product this website sell?
+    - what do you guys selling?
+    - you sell?
+
+- intent: introduction_website
+  examples: |
+    - what is this website?
+    - this website is
+    - can you describe this website
 
 - intent: no_context
   examples: |
