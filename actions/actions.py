@@ -11,12 +11,14 @@ from typing import Any, Text, Dict, List
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+import requests
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 #
 #
 nltk.download('stopwords')
+nltk.download('punkt')
 class ActionTellBestProduct(Action):
 
     def name(self) -> Text:
@@ -48,6 +50,8 @@ class ActionTellProduct(Action):
         cleaned_tokens = [word for word in tokens if word.lower() not in stop_words]
 
         cleaned_message = ' '.join(cleaned_tokens)
+
+        requests.get('http://bkyz2-fmaaa-aaaaa-qaaaq-cai.localhost:4943/product')
 
         print(cleaned_message)
 
