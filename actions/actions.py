@@ -34,6 +34,9 @@ class ActionTellProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # tracker.latest_message.get('text')
+        print(tracker.latest_message.get('text'))
+
         dispatcher.utter_message(text="Here is what do you need in our store:\nhttps://buybox.com/product=\"Red Shoe\"")
 
         return []
