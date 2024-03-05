@@ -98,6 +98,10 @@ intents:
   - smalltalk_user_will_be_back
 
 responses:
+
+  utter_default_fallback:
+  - text: "I'm sorry, I didn't understand that. Can you please rephrase or provide more information?"
+
   utter_greet:
   - text: "Hello! May i help you?"
   - text: "Hi! How can i help you?"
