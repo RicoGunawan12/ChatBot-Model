@@ -2,6 +2,11 @@ version: "3.1"
 
 rules:
 
+- rule: Fallback Handler
+  steps:
+  - intent: nlu_fallback
+  - action: utter_nlu_fallback
+
 - rule: Give Product
   steps:
   - intent: buy_product
@@ -218,11 +223,6 @@ rules:
   steps:  
   - intent: smalltalk_appraisal_well_done
   - action: utter_smalltalk_appraisal_well_done
-
-- rule: path_smalltalk_confirmation_cancel
-  steps:  
-  - intent: smalltalk_confirmation_cancel
-  - action: utter_smalltalk_confirmation_cancel
 
 - rule: path_smalltalk_confirmation_no
   steps:  

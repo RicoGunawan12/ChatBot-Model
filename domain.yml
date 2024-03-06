@@ -99,8 +99,8 @@ intents:
 
 responses:
 
-  utter_default_fallback:
-  - text: "I'm sorry, I didn't understand that. Can you please rephrase or provide more information?"
+  utter_nlu_fallback:
+  - text: "I'm sorry, I didn't understand that. Can you please rephrase?"
 
   utter_greet:
   - text: "Hello! May i help you?"
@@ -307,11 +307,6 @@ responses:
   utter_smalltalk_appraisal_well_done:
     - text: "My pleasure."
     - text: "Glad I could help."
-
-  utter_smalltalk_confirmation_cancel:
-    - text: "That's forgotten. What next?"
-    - text: "Okay, cancelled. What next?"
-    - text: "Cancelled! What would you like to do next?"
 
   utter_smalltalk_confirmation_no:
     - text: "Understood."
