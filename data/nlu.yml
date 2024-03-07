@@ -179,7 +179,12 @@ nlu:
   examples: |
     - i want to buy
     - buy
+    - buy buy buy buy buy buy buy buy
     - find
+    - find find find find find find
+    - want
+    - want want want want want want
+    - need need need need need need need
     - i need to buy
     - can you find me a ?
     - im looking for
@@ -188,8 +193,9 @@ nlu:
     - i want
     - can you recommend me
     - recommend
+    - recommend recommend recommend recommend recommend recommend
     - recommend me
-    - i meed to find
+    - i need to find
 
 - intent: give_description
     - /^.*$/
@@ -1414,15 +1420,6 @@ nlu:
     - I am mad
     - I am mad at you
 
-- intent: smalltalk_user_back
-  examples: |
-    - I am back
-    - I'm here again
-    - here I am again
-    - I got back
-    - I came back
-    - I have returned
-
 - intent: smalltalk_user_bored
   examples: |
     - that was boring
@@ -1745,11 +1742,3 @@ nlu:
     - can we talk
     - let's talk
     - can we chat
-
-- intent: smalltalk_user_will_be_back
-  examples: |
-    - I'll get back to you in a moment
-    - be back in 5 minutes
-    - I'll be back
-    - I promise to come back
-    - I'll be back in a few minutes

@@ -324,11 +324,6 @@ rules:
   - intent: smalltalk_user_angry
   - action: utter_smalltalk_user_angry
 
-- rule: path_smalltalk_user_back
-  steps:  
-  - intent: smalltalk_user_back
-  - action: utter_smalltalk_user_back
-
 - rule: path_smalltalk_user_bored
   steps:  
   - intent: smalltalk_user_bored
@@ -448,8 +443,3 @@ rules:
   steps:  
   - intent: smalltalk_user_wants_to_talk
   - action: utter_smalltalk_user_wants_to_talk
-
-- rule: path_smalltalk_user_will_be_back
-  steps:  
-  - intent: smalltalk_user_will_be_back
-  - action: utter_smalltalk_user_will_be_back

@@ -460,9 +460,7 @@ class ActionTellProduct(Action):
 
         cleaned_message = ' '.join(cleaned_tokens)
 
-        # requests.get('http://bkyz2-fmaaa-aaaaa-qaaaq-cai.localhost:4943/product')
-
-        print(cleaned_message)
+        # data = requests.get('http://bkyz2-fmaaa-aaaaa-qaaaq-cai.localhost:4943/product')
 
         descriptions = [item['description'] for item in data]
 
@@ -480,12 +478,27 @@ class ActionTellProduct(Action):
         # Construct the response message
         response = "Here are the top 3 related products for you:\n"
         for product in top_products:
+            # product_name = product['name']
+            # product_description = product['description']
+            # product_price = product['price']
+            # response = f"Product: {product_name}\nDescription: {product_description}\nPrice: {product_price} ICP\n\n"
+            # dispatcher.utter_message(text=response, image=product['media_urls'][0])
             product_name = product['name']
             product_description = product['description']
             product_price = product['price']
-            response += f"Product: {product_name}\nDescription: {product_description}\nPrice: {product_price} ICP\n\n"
+            image_url = product['media_urls'][0]  # Assuming only one image URL per product
 
-        dispatcher.utter_message(text=response)
+            # Construct the message JSON object
+            message = {
+                "recipient_id": "default",
+                "text": f"Product: {product_name}\nDescription: {product_description}\nPrice: {product_price} ICP",
+                "image": image_url
+            }
+
+            # Send the message
+            dispatcher.utter_message(json_message=message)
+
+        # dispatcher.utter_message(text=response, )
 
 
 

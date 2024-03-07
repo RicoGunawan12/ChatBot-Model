@@ -70,7 +70,6 @@ intents:
   - smalltalk_greetings_nice_to_talk_to_you
   - smalltalk_greetings_whatsup
   - smalltalk_user_angry
-  - smalltalk_user_back
   - smalltalk_user_bored
   - smalltalk_user_busy
   - smalltalk_user_can_not_sleep
@@ -95,7 +94,6 @@ intents:
   - smalltalk_user_waits
   - smalltalk_user_wants_to_see_agent_again
   - smalltalk_user_wants_to_talk
-  - smalltalk_user_will_be_back
 
 responses:
 
@@ -416,13 +414,6 @@ responses:
     - text: "I'm sorry. A quick walk may make you feel better."
     - text: "Take a deep breath. "
 
-  utter_smalltalk_user_back:
-    - text: "Long time no see. What's up?"
-    - text: "Just in time. How can I help?"
-    - text: "Welcome back. What can I do for you?"
-    - text: "You were missed. What can I do for you today?"
-    - text: "Good to have you here. What can I do for you?"
-
   utter_smalltalk_user_bored:
     - text: "Boredom, huh? Check out a video of a hedgehog taking a bath!"
     - text: "What to do against boredom? Watch baby animal videos."
@@ -553,11 +544,6 @@ responses:
     - text: "Good conversation really makes my day."
     - text: "I'm always here to lend an ear."
     - text: "Talking is what I do best."
-
-  utter_smalltalk_user_will_be_back:
-    - text: "I'll be waiting."
-    - text: "Okay. You know where to find me."
-    - text: "All right. I'll be here."
 
 session_config:
   session_expiration_time: 60
